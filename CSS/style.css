@@ -208,12 +208,13 @@ footer {
 
 #brands {
     display: none;
-   
+   padding-top: 1rem;
+   padding-bottom: 2rem;
 }
 .brand-box {
     border: 1px solid var(--color-gray-300);
     border-radius: 8px;
-    height: 100px;
+    height: 80px;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -248,11 +249,11 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+            gap: 1rem;
         }
     }
     #brand-1, #brand-2, #brand-3, #brand-4 {
-        display: block;
+        display: flex;
     }
 
     #brand-5, #brand-6 {
@@ -294,7 +295,7 @@ footer {
     }
 
     #brand-5, #brand-6 {
-        display: block;
+        display: flex;
     }
 
 
