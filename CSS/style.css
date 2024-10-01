@@ -293,6 +293,10 @@ footer {
         }
     }
 
+    #brand-5, #brand-6 {
+        display: block;
+    }
+
 
 
 }
