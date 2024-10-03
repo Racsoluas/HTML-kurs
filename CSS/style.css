@@ -248,7 +248,7 @@ footer {
     background: rgb(99,102,241);
     background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
     padding-bottom: 2rem;
-
+    overflow: hidden;
     /* overflow: hidden; */
     
 
@@ -263,9 +263,9 @@ footer {
         grid-template-areas:    "headline" "content";
 
         @media (min-width: 768px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 2fr 2fr;
             grid-template-areas:    "headline headline"
-                                    "content images";
+                                    "content images" ;
         }
 
         @media (min-width: 1400px) {
@@ -284,9 +284,10 @@ footer {
             text-align: center;
             font-size: 34px;
             font-weight: 800;
+            padding-top: 3rem;
 
             @media (min-width: 768px) {
-                font-size: 56px;
+                font-size: 42px;
             }
             @media (min-width: 1400px) {
                 font-size: 56px;
@@ -299,6 +300,7 @@ footer {
     .content {
         grid-area: content;
         text-align: center;
+
 
         @media (min-width:  768px) {
             text-align: left;
@@ -346,9 +348,12 @@ footer {
         position: relative;
         grid-area: images;
         display: none;
+        height: 350px;
 
         @media (min-width: 768px) {
             display: block;
+            height: 100%;
+            
         }
 
         .img-back {
@@ -356,12 +361,13 @@ footer {
             z-index: -10;
             bottom: 0;
             /* left: 50; */
-            width: 70%;
+            width: 55%;
 
             @media (min-width: 1400px) {
                 width: auto;
                 bottom: -100;
                 right: 230;
+                height: auto;
             }
         }
         .img-middle {
@@ -586,6 +592,37 @@ footer {
         gap: 2rem;
     }
 } */
+
+.HDIW {
+    background-color: var(--color-gray-100);
+    display: grid;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .section-main{
+        font-size: 3em;
+        color: var(--color-gray-900);
+    }
+
+
+    .section-title {
+        color: var(--color-gray-900);
+        font-size: 34px;
+    }
+
+    .para-feat-box{
+        width: 600px;
+        color: var(--color-gray-200);
+        font: 54px;
+    }
+    }
+
+    .container-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
  .subscribe {
     margin: 1rem;
