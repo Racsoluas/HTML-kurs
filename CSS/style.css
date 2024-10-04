@@ -793,15 +793,52 @@ font-size: 14px;
 }
 
 .example-card-2 {
-    gap: em;
+    height: 400px;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     h1 {
         font-size: 40px;
+        font-weight: 700;
         color: var(--color-gray-900);
+    }
+
+    p  {
+        color: var(--color-gray-600);
+    }
+
+    button {
+        display: flex;
+        margin-right: 16em;
     }
 }
 
 .example-card {
+    width: 250px;
+    height: 100px;
     display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.example-cash {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    }
+
+.sub-cash{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
 }
 
 
