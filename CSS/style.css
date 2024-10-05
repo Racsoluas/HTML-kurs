@@ -604,6 +604,10 @@ footer {
     padding-top: 2em;
     padding-bottom: 2em;
 
+    p {
+        color: var(--color-gray-500);
+    }
+
     .section-main{
         font-size: 3em;
         color: var(--color-gray-900);
